@@ -28,3 +28,17 @@
     # > - modified:   core/urls.py
     # > - new file:   templates/demo.html
 
+#### 4. Add static files
+
+    # > - 1. Download admin template
+    # > - 2. Create static folder in app root
+    # > - 3. Copy assets from admin template to static folder
+    # > - 4. Load static assets (css, js, img) -> {% static 'path' %}
+
+    # > - new file:   .gitignore
+    # > - modified:   README.md
+    # > - modified:   core/__pycache__/settings.cpython-37.pyc
+    # > - modified:   core/__pycache__/urls.cpython-37.pyc
+    # > - modified:   core/settings.py
+    # > - modified:   core/urls.py
+    # > - modified:   templates/demo.html
