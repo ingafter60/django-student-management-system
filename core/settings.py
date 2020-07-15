@@ -75,14 +75,27 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         # 'ENGINE': 'django.db.backends.sqlite3',
+#         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#         'ENGINE':'django.db.backends.mysql',
+#         'NAME'  :'django_student_management_system',
+#         'USER'  :'student_management_system',
+#         'PASSWORD':'student_management_system',
+#         'HOST'  :'localhost',
+#         'PORT'  :'3306',
+#     }
+# }
+
 DATABASES = {
     'default': {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         'ENGINE':'django.db.backends.mysql',
         'NAME'  :'django_student_management_system',
-        'USER'  :'student_management_system',
-        'PASSWORD':'student_management_system',
+        'USER'  :'root',
+        'PASSWORD':'',
         'HOST'  :'localhost',
         'PORT'  :'3306',
     }
@@ -152,3 +165,6 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"),]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR , 'media')
+
+AUTH_USER_MODEL="app_student.CustomUser"
+
