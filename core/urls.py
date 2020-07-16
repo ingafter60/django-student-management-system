@@ -21,8 +21,12 @@ from app_student import views
 from core import settings
 
 urlpatterns = [
-    path('demo', views.showDemoPage),
+    path('demo', views.ShowDemoPage),
     path('admin/', admin.site.urls),
+    path('', views.ShowLoginPage),
+    path('get_user_detail', views.GetUserDetails),
+    path('logout_user', views.logout_user),
+    path('doLogin', views.doLogin),
 ]
 
 urlpatterns +=  static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

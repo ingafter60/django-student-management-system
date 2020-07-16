@@ -155,6 +155,18 @@ def create_user_profile(sender, instance, created, **kwargs):
         if instance.user_type==3:
             Students.objects.create(admin.instance)
 
+''' NOTE ON: @reciever
+    creating @receiver(post_save, sender=CustomUser)
+    so this method will run only when data added in CustomUser
+'''
+''' NOTE ON: save_user_profile function
+    create func which add data into HOD, STAFF, STUDENT table
+    which taking parameter sender, instance, created
+    here sender is class which call this method instance
+    is current inserted data model
+    created is True / False, True when data inserted,
+    if data created is True means data inserted
+'''
 @receiver(post_save, sender=CustomUser)
 def save_user_profile(sender, instance, **kwargs):
     if instance.user_type==1:

@@ -168,3 +168,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR , 'media')
 
 AUTH_USER_MODEL="app_student.CustomUser"
 
+AUTHENTICATION_BACKENDS=['app_student.EmailBackEnd.EmailBackEnd']
+
