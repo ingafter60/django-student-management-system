@@ -172,4 +172,21 @@
         modified:   core/settings.py                                              
 
 
+#### 13. | VIDEO 4 | Templates & Add Staff
 
+    Video 4 - Part 1 (0-11:17) : Git add and status 
+    
+        modified:   README.md
+        new file:   app_student/HodViews.py
+        new file:   app_student/__pycache__/HodViews.cpython-38.pyc
+        modified:   app_student/__pycache__/views.cpython-38.pyc
+        new file:   app_student/templates/hod_template/base_template.html
+        new file:   app_student/templates/hod_template/content_header.html
+        new file:   app_student/templates/hod_template/footer.html
+        new file:   app_student/templates/hod_template/home_content.html
+        new file:   app_student/templates/hod_template/notification_template.html
+        new file:   app_student/templates/hod_template/sidebar_template.html
+        modified:   app_student/views.py
+        modified:   core/__pycache__/urls.cpython-38.pyc
+        modified:   core/urls.py
+        modified:   templates/login_page.html

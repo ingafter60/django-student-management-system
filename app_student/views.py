@@ -1,6 +1,7 @@
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render
+from django.contrib import messages
 
 from app_student.EmailBackEnd import EmailBackEnd
 
@@ -22,9 +23,13 @@ def doLogin(request):
 		if user !=None:
 			login(request, user)
 			'''request.POST.get("KEY") is for accessing value coming from the FORM'''
-			return HttpResponse("Email : "+request.POST.get("email")+" Password : "+request.POST.get("password"))
+			# return HttpResponse("Email : "+request.POST.get("email")+" Password : "+request.POST.get("password"))
+			return HttpResponseRedirect("/admin_home")	
 		else:
-			return HttpResponse("Invalid Login!")	
+			'''after login display success / error message'''
+			messages.error(request, "Invalid Login Details!")
+			# return HttpResponse("Invalid Login!")	
+			return HttpResponseRedirect("/")	
 
 
 def GetUserDetails(request):
