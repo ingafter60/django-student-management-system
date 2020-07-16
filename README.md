@@ -193,7 +193,7 @@
         modified:   core/urls.py
         modified:   templates/login_page.html
 
-    Video 4 - Part 1 (11:17-13:55) : Customizing Sidebar & Add All Necessary Menus
+    Video 4 - Part 2 (11:17-13:55) : Customizing Sidebar & Add All Necessary Menus
 
         Modified sidebar and added all necessary menus
 
@@ -201,4 +201,31 @@
 
             modified:   app_student/templates/hod_template/sidebar_template.html
 
+
+    Video 4 - Part 3 (11:17-17:07) : Dynamic title and page title for Home and Add Staff pages
+
+        Git add and status 
+
+            modified:   README.md
+            modified:   app_student/HodViews.py
+            modified:   app_student/__pycache__/HodViews.cpython-38.pyc
+            new file:   app_student/templates/hod_template/add_course_template.html
+            new file:   app_student/templates/hod_template/add_staff_template.html
+            new file:   app_student/templates/hod_template/add_student_template.html
+            new file:   app_student/templates/hod_template/add_subject_template.html
+            modified:   app_student/templates/hod_template/base_template.html
+            renamed:    app_student/templates/hod_template/content_header.html -> app_student/templates/hod_template/content_header_TOREMOVE.html
+            modified:   app_student/templates/hod_template/home_content.html
+            new file:   app_student/templates/hod_template/manage_course_template.html
+            new file:   app_student/templates/hod_template/manage_staff_template.html
+            new file:   app_student/templates/hod_template/manage_student_template.html
+            new file:   app_student/templates/hod_template/manage_subject_template.html
+            modified:   app_student/templates/hod_template/sidebar_template.html
+            new file:   app_student/templates/hod_template/staff_feedback_template.html
+            new file:   app_student/templates/hod_template/staff_leave_template.html
+            new file:   app_student/templates/hod_template/student_feedback.html
+            new file:   app_student/templates/hod_template/student_leave.html
+            new file:   app_student/templates/hod_template/view_attendance.html
+            modified:   core/__pycache__/urls.cpython-38.pyc
+            modified:   core/urls.py    
 
