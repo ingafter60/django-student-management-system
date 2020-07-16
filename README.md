@@ -174,8 +174,10 @@
 
 #### 13. | VIDEO 4 | Templates & Add Staff
 
-    Video 4 - Part 1 (0-11:17) : Git add and status 
-    
+    Video 4 - Part 1 (0-11:17) : Home page, login, logout and redirect
+
+        Git add and status 
+
         modified:   README.md
         new file:   app_student/HodViews.py
         new file:   app_student/__pycache__/HodViews.cpython-38.pyc
@@ -190,3 +192,13 @@
         modified:   core/__pycache__/urls.cpython-38.pyc
         modified:   core/urls.py
         modified:   templates/login_page.html
+
+    Video 4 - Part 1 (11:17-13:55) : Customizing Sidebar & Add All Necessary Menus
+
+        Modified sidebar and added all necessary menus
+
+        Git add and status 
+
+            modified:   app_student/templates/hod_template/sidebar_template.html
+
+
